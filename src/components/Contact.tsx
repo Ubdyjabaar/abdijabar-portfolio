@@ -52,7 +52,7 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="font-semibold text-white mb-1">Location</h3>
-                <p className="text-zinc-400 text-sm">Available for Remote Work</p>
+                <p className="text-zinc-400 text-sm">Somalia / Mogadishu — Available for Remote Work</p>
               </div>
             </div>
           </motion.div>
