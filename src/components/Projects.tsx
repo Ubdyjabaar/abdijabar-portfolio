@@ -5,32 +5,40 @@ import { ExternalLink, GitFork } from "lucide-react";
 
 const projects = [
   {
-    title: "AI-Powered Assistant",
+    title: "Abdijabar Tech — Premium Calculator",
     description:
-      "Intelligent conversational agent using advanced prompt engineering and LLM integration for natural language understanding and task automation.",
-    tags: ["AI", "Python", "Prompt Engineering", "LLM"],
+      "A cross-platform calculator app with AI-powered math solver, 2D graphing engine, unit converter with 8 categories, and camera OCR scan & solve. Built with Flutter and Groq AI.",
+    tags: ["Flutter", "AI", "Groq", "Dart", "OCR", "SQLite"],
     color: "#00d4ff",
+    github: "https://github.com/Ubdyjabaar/Calculator",
+    demo: "https://ubdyjabaar.github.io/Calculator",
   },
   {
-    title: "Flutter E-Commerce App",
+    title: "ABDI AI — Telegram Assistant",
     description:
-      "Cross-platform mobile application with real-time inventory, payment gateway integration, and personalized recommendations using Firebase.",
-    tags: ["Flutter", "Firebase", "UI/UX", "Dart"],
+      "A Telegram AI assistant bot for task management, event scheduling with reminders, quiz solving from PDFs/images, and social media posting. Uses LangGraph + Groq LLM.",
+    tags: ["Python", "LangGraph", "Groq", "Telegram", "AI", "SQLite"],
     color: "#7c3aed",
+    github: "https://github.com/Ubdyjabaar/Midusa-AI",
+    demo: "https://t.me/Abdi_AI_Bot",
   },
   {
-    title: "Data Analytics Dashboard",
+    title: "Abdijabar Tech — AI Suite",
     description:
-      "Interactive visualization platform for business intelligence, featuring real-time data processing, custom reports, and predictive analytics.",
-    tags: ["Python", "Data Analysis", "React", "SQL"],
+      "Full ecosystem combining the calculator app and AI assistant with Firebase backend for real-time sync, cloud storage, and cross-platform data persistence.",
+    tags: ["Firebase", "AI", "Cloud", "Full-Stack", "API"],
     color: "#f59e0b",
+    github: "https://github.com/Ubdyjabaar",
+    demo: "https://ubdyjabaar.github.io/Calculator",
   },
   {
-    title: "UI/UX Design System",
+    title: "Portfolio Website",
     description:
-      "Comprehensive design system with reusable components, accessibility-first approach, and seamless developer handoff documentation.",
-    tags: ["UI/UX", "Figma", "Design System", "Prototyping"],
+      "This portfolio — a premium 3D interactive portfolio built with Next.js, React Three Fiber, Framer Motion, and Tailwind CSS. Features glassmorphism design and 3D visuals.",
+    tags: ["Next.js", "Three.js", "Framer Motion", "Tailwind", "TypeScript"],
     color: "#10b981",
+    github: "https://github.com/Ubdyjabaar/abdijabar-portfolio",
+    demo: "",
   },
 ];
 
@@ -116,19 +124,25 @@ export default function Projects() {
                 </div>
                 <div className="flex items-center gap-4 text-zinc-500">
                   <a
-                    href="#"
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-1.5 text-xs hover:text-primary transition-colors"
                   >
                     <GitFork size={14} />
                     Source
                   </a>
-                  <a
-                    href="#"
-                    className="flex items-center gap-1.5 text-xs hover:text-primary transition-colors"
-                  >
-                    <ExternalLink size={14} />
-                    Live Demo
-                  </a>
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1.5 text-xs hover:text-primary transition-colors"
+                    >
+                      <ExternalLink size={14} />
+                      Live Demo
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.div>
