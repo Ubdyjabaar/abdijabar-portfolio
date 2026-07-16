@@ -39,3 +39,29 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Flutter/Dart - Calculator project
+Calculator/.dart_tool/
+Calculator/.flutter-plugins*
+Calculator/.packages
+Calculator/.pub/
+Calculator/build/
+Calculator/android/.gradle/
+Calculator/android/build/
+Calculator/android/local.properties
+Calculator/ios/Pods/
+Calculator/ios/.symlinks/
+Calculator/ios/Flutter/Flutter.framework
+Calculator/ios/Flutter/Flutter.podspec
+Calculator/.metadata
+Calculator/*.apk
+Calculator/*.zip
+Calculator/*.aab
+Calculator/*.jks
+Calculator/*.keystore
+
+# Python - Midusa AI
+Midusa AI/abdi_ai/__pycache__/
+Midusa AI/abdi_ai/*.pyc
+Midusa AI/abdi_ai/*.db
+Midusa AI/abdi_ai/.env
